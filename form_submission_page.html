@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.10.0/dist/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+
+    #button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    #button {
+      border-radius: 0.25rem;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 1.5rem;
+    }
+
+    .parallax-section,
+    .navbar,
+    .navbar-toggler,
+    .navbar-toggler-icon,
+    .nav-link,
+    .btn {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .parallax-section:hover,
+    .navbar-toggler:hover,
+    .navbar-toggler-icon:hover,
+    .nav-link:hover,
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Увеличение размера текста */
+    .parallax-section h2 {
+      font-size: 2.5rem;
+    }
+
+    .navbar-brand {
+      /* Exclude scaling effect on logo and text */
+      transition: none;
+    }
+
+    .container.form-container {
+      padding: 20px;
+    }
+
+    .form-container .field label {
+      font-size: 1.5rem;
+    }
+
+    .form-container input[type="text"] {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png" alt="Искусство лого">Constantine electronics.inc</a>
+      <button class="navbar-toggler glare-effect" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
+          </li>
+        </ul>
+      </div>    
+    </div>
+  </nav>
+  
+  <div class="p-5 text-center parallax-section rounded glare-effect">
+    <h2 class="display-4">Форма обратной связи</h2>
+  </div>
+  <div class="container mt-3 text-center bg-custom-light-gray rounded flex-grow form-container" style="max-width: 400px; margin: 0 auto;">
+    <form id="form">
+      <div class="field">
+        <label for="from_name" style="color: black; font-size: 1.5rem;">От имени:</label>
+        <input type="text" name="from_name" id="from_name" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
+      </div>
+      <div class="field">
+        <label for="to_name" style="color: black; font-size: 1.5rem;">К имени:</label>
+        <input type="text" name="to_name" id="to_name" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
+      </div>
+      <div class="field">
+        <label for="message" style="color: black; font-size: 1.5rem;">Сообщение:</label>
+        <input type="text" name="message" id="message" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
+      </div>
+      <div class="field">
+        <label for="reply_to" style="color: black; font-size: 1.5rem;">Ответ на:</label>
+        <input type="text" name="reply_to" id="reply_to" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
+      </div>
+      
+      <div id="button-container">
+        <input type="submit" id="button" value="Отправить сообщение" class="btn btn-primary rounded glare-effect" style="background-color: #1781eb;">
+      </div>
+    </form>
+  </div>
+  
+
+  <footer class="glare-effect rounded" style="background-color: #1781eb; width: 100%;">
+    <div class="container text-center">
+      <p>&copy; 2024 Constantine electronics</p>
+    </div>
+  </footer>
+
+  <script src="ecripto.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('iBksvlv-wdACrADrf')
+  </script>
+</body>
+</html>

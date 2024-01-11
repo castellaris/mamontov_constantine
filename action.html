@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратный отсчет</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        .glare-effect {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            border-radius: 10px; /* Выберите значение, которое вам нравится */
+        }
+
+        .content-container {
+        max-width: 600px; /* Установите максимальную ширину контейнера */
+        margin: 45px auto; /* Выровняйте по центру по вертикали и горизонтали */
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png"
+                    alt="Искусство лого">Constantine electronics.inc
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link glare-effect" style="background-color: #1781eb; color: white;"
+                            href="main.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link glare-effect" style="background-color: #1781eb; color: white;"
+                            href="action.html">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link glare-effect" style="background-color: #1781eb; color: white;"
+                            href="form_submission_page.html">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-5 text-center parallax-section rounded glare-effect">
+        <h2 class="display-4">Отдел акций</h2>
+    </div>
+
+    <div class="content-container">
+      <h1 id="gift-title" class="rounded glare-effect"
+          style="background-color: #1464b4; color: white; padding: 10px;">Каждому сотому покупателю полагается игровая
+          приставка от нашей компании</h1>
+  </div>
+    <h2>До конца акции осталось:</h2>
+    <div id="countdown">
+        <div class="countdown-block glare-effect rounded" id="days"></div>
+        <div class="countdown-block glare-effect rounded" id="hours"></div>
+        <div class="countdown-block glare-effect rounded" id="minutes"></div>
+        <div class="countdown-block glare-effect rounded" id="seconds"></div>
+    </div>
+
+    <script src="ecriptum.js"></script>
+
+    <footer class="rounded glare-effect"
+        style="background-color: #1781eb; position: absolute; bottom: 0; width: 100%;">
+        <p>&copy; 2024 Constantine electronics</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

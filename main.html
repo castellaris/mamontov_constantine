@@ -63,6 +63,11 @@
   margin-bottom: 30px; /* Измените значение по вашему усмотрению */
 }
 
+.nav-link-custom {
+  width: 100%; /* Set the desired width for all navigation links */
+  text-align: center; /* Center the text within the button */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
   </style>
 <body>
 
@@ -73,17 +78,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item flex-fill">
-          <a class="nav-link glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
-        </li>
-        <li class="nav-item flex-fill">
-          <a class="nav-link glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
-        </li>
-        <li class="nav-item flex-fill">
-          <a class="nav-link glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
-        </li>
-      </ul>
+    <ul class="navbar-nav ms-auto">
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
+  </li>
+</ul>
       <div class="d-lg-none">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="responsiveDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

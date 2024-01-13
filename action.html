@@ -83,7 +83,27 @@
  .navbar {
     height: 60px; /* Adjust the height as needed */
   }
-  /* Add this style to move the navbar buttons to the top */
+
+  body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0; /* Remove default body margin */
+    }
+
+    .top-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #1781eb;
+        color: white;
+    }
+
+    .navbar-brand,
+    .navbar-nav {
+        margin: 0; /* Remove default margin for the logo and navbar buttons */
+    }
   </style>
 <body>
 

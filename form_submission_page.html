@@ -114,11 +114,17 @@
         margin-left: auto; /* Move the navbar-nav to the right */
     }
 
-        .navbar-nav .nav-link-custom {
+   .navbar-nav .nav-link-custom {
       /* Ensure equal width for all buttons */
       width: 100%;
       flex-grow: 1;
       text-align: center;
+    }
+
+    /* Add transition effect to buttons */
+    .navbar-nav .nav-link-custom:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
     }
   </style>
 </head>

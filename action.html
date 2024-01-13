@@ -73,7 +73,8 @@
       text-align: center;
       box-sizing: border-box;
     }
-     body {
+<style>
+    body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -102,12 +103,15 @@
     }
 
     .navbar-nav {
-        margin-left: auto; /* Move the navbar-nav to the right */
-        margin-right: 50px; /* Adjust this value as needed */
+        margin-left: auto;
     }
 
+    .navbar-nav .nav-item {
+        margin-right: 20px; /* Adjust this value as needed */
+    }
 
-  </style>
+    /* Add any additional styles you need */
+</style>
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark">

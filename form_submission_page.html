@@ -71,74 +71,32 @@
       font-size: 1.2rem;
     }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  .top-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #1781eb;
-    color: white;
-    margin-top: -20px;
-  }
-
-  .navbar {
-    margin-bottom: 0;
-  }
-
-  .navbar-brand,
-  .navbar-nav {
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-nav {
-    margin-left: auto; /* Move the navbar-nav to the right */
-  }
-
-  .navbar-nav .nav-item {
-    flex: 1;
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link {
+    .navbar-nav .nav-link {
       /* Ensure equal width distribution for buttons */
-      max-width: 100%;
+      width: 100%;
       text-align: center; /* Center text within buttons */
+      white-space: nowrap; /* Force text to wrap to next line if it is too long */
     }
   </style>
 </head>
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png" alt="Искусство лого">Constantine electronics.inc</a>
-      <button class="navbar-toggler glare-effect" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
-          </li>
-        </ul>
-      </div>    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
+        </li>
+      </ul>
     </div>
   </nav>
-  
+</body>
+</html>
   <div class="p-5 text-center parallax-section rounded glare-effect">
     <h2 class="display-4">Форма обратной связи</h2>
   </div>

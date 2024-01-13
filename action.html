@@ -10,14 +10,32 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+          body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Add this line to remove default margin */
         }
 
         .navbar {
-            width: 100%;
-            z-index: 1000;
+            margin-bottom: 0; /* Add this line to remove default margin for navbar */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            margin-right: auto; /* Push the navbar brand and logo to the top left */
+        }
+
+        .navbar-nav {
+            margin-left: auto; /* Push the navbar items to the top right */
+        }
+
+        .parallax-section {
+            margin-top: -56px; /* Adjust this value based on your design */
         }
 
         .navbar-brand img {

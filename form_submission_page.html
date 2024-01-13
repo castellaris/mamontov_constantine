@@ -70,38 +70,6 @@
     .form-container input[type="text"] {
       font-size: 1.2rem;
     }
-
-        body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
-
-    .top-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        background-color: #1781eb;
-        color: white;
-        margin-top: -20px;
-    }
-
-    .navbar {
-        margin-bottom: 0;
-    }
-
-    .navbar-brand,
-    .navbar-nav {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar-nav {
-        margin-left: auto; /* Move the navbar-nav to the right */
-    }
   </style>
 </head>
 <body>
@@ -134,19 +102,19 @@
   <div class="container mt-3 text-center bg-custom-light-gray rounded flex-grow form-container" style="max-width: 400px; margin: 0 auto;">
     <form id="form">
       <div class="field">
-        <label for="from_name" style="color: white; font-size: 1.5rem;">Введите ваше имя:</label>
+        <label for="from_name" style="color: black; font-size: 1.5rem;">От имени:</label>
         <input type="text" name="from_name" id="from_name" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
       </div>
       <div class="field">
-        <label for="to_name" style="color: white; font-size: 1.5rem;">Введите почту, указанную в контактах на главной:</label>
+        <label for="to_name" style="color: black; font-size: 1.5rem;">К имени:</label>
         <input type="text" name="to_name" id="to_name" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
       </div>
       <div class="field">
-        <label for="message" style="color: white; font-size: 1.5rem;">Оформить заказ:</label>
+        <label for="message" style="color: black; font-size: 1.5rem;">Сообщение:</label>
         <input type="text" name="message" id="message" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
       </div>
       <div class="field">
-        <label for="reply_to" style="color: white; font-size: 1.5rem;">Оставьте отзыв:</label>
+        <label for="reply_to" style="color: black; font-size: 1.5rem;">Ответ на:</label>
         <input type="text" name="reply_to" id="reply_to" class="form-control" style="border-radius: 0.25rem; display: inline-block;">
       </div>
       
@@ -170,3 +138,4 @@
   </script>
 </body>
 </html>
+

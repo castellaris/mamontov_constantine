@@ -102,44 +102,32 @@
     .navbar-nav {
         margin-left: auto; /* Move the navbar-nav to the right */
     }
-
-    .navbar-nav .nav-link {
-  width: 100%;
-  text-align: center;
-}
-
-.nav-link {
-  min-width: 120px; /* Set a minimum width for the buttons */
-  font-size: 1.8rem; /* Increase the font size for the buttons */
-}
-
-/* Apply the same transition and hover effect to the nav-links */
-.nav-link {
-  transition: transform 0.3s ease-in-out;
-}
-
-.btn-navbar:hover {
-  transform: scale(1.1);
-}
-
   </style>
 </head>
 <body>
 
-<div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link glare-effect rounded w-100" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link glare-effect rounded w-100" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link glare-effect rounded w-100" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
-        </li>
-    </ul>
-</div>
-
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png" alt="Искусство лого">Constantine electronics.inc</a>
+      <button class="navbar-toggler glare-effect" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="main.html" style="background-color: #1781eb; color: white;">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="action.html" style="background-color: #1781eb; color: white;">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
+          </li>
+        </ul>
+      </div>    
+    </div>
+  </nav>
+  
   <div class="p-5 text-center parallax-section rounded glare-effect">
     <h2 class="display-4">Форма обратной связи</h2>
   </div>
@@ -181,6 +169,4 @@
     emailjs.init('iBksvlv-wdACrADrf')
   </script>
 </body>
-</html> в данном коде сделай так, чтобы кнопки из меню navbar были одного размера относительно друг друга по горизонтали
-
-
+</html>

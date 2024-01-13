@@ -52,8 +52,9 @@
     }
 
     .navbar-brand {
-      transition: none;
-    }
+    padding: 0; /* Remove default padding */
+    margin-right: 15px; /* Add margin to separate the logo from the edge of the container */
+  }
 
     .landing-video {
       max-height: 200px;
@@ -74,11 +75,14 @@
       box-sizing: border-box;
     }
 
- #logo-container {
-      position: absolute;
-      top: -30px; /* Adjust this value to move it higher */
-      left: 0;
-    }
+ .navbar-brand img {
+    max-height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some space between the logo and text */
+  }
+
+ .navbar {
+    height: 60px; /* Adjust the height as needed */
+  }
   </style>
 <body>
 

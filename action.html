@@ -35,21 +35,23 @@
         margin: 45px auto; /* Выровняйте по центру по вертикали и горизонтали */
         }
 
-        .navbar-nav {
+  .navbar-nav {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-end; /* Перемещаем элементы вправо */
+    align-items: flex-start; /* Перемещаем элементы вверх */
+    height: 100%; /* Занимаем 100% высоты родительского контейнера (navbar) */
 }
 
 .navbar-nav .nav-item {
-    flex: 1;
-    text-align: center;
+    flex: 0 0 auto; /* Отключаем увеличение ширины элемента */
+    margin-left: 10px; /* Добавляем немного отступа между кнопками */
 }
 
 .navbar-nav .nav-link-custom {
-    width: 100%;
-    box-sizing: border-box;
+    padding: 10px 15px; /* Увеличиваем отступы внутри кнопок */
+    font-size: 16px; /* Увеличиваем размер шрифта */
 }
+
     </style>
 </head>
 

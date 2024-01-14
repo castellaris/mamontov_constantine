@@ -105,42 +105,42 @@
     .navbar-nav {
         margin-left: auto; /* Move the navbar-nav to the right */
     }
+
+    .ml-auto {
+            margin-left: auto !important;
+        }
 </style>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png" alt="Искусство лого">Constantine electronics.inc</a>
-      <button class="navbar-toggler glare-effect" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom glare-effect rounded" href="main.html" style="background-color:#1781eb; color: white;">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom glare-effect rounded" href="action.html" style="background-color:#1781eb; color: white;">Акции</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
-          </li>
-        </ul>
-        <div class="d-lg-none">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="responsiveDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Меню
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/272_Raspberry_Pi-512.png" alt="Искусство лого">Constantine electronics.inc</a>
+            <button class="navbar-toggler glare-effect" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu" aria-labelledby="responsiveDropdownMenuButton">
-              <a class="dropdown-item" href="main.html">Главная</a>
-              <a class="dropdown-item" href="action.html">Акции</a>
-              <a class="dropdown-item" href="form_submission_page.html">Обратная связь</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Wrap the navigation links in a div with ml-auto class to push them to the right -->
+                <div class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom glare-effect rounded" href="main.html" style="background-color:#1781eb; color: white;">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom glare-effect rounded" href="action.html" style="background-color:#1781eb; color: white;">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom glare-effect rounded" href="form_submission_page.html" style="background-color: #1781eb; color: white;">Обратная связь</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-lg-none">
+                    <!-- Your existing dropdown code -->
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
+
 
     <div class="p-5 text-center parallax-section rounded glare-effect">
         <h2 class="display-4">Отдел акций</h2>
